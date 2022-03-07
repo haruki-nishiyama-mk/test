@@ -1,0 +1,10 @@
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

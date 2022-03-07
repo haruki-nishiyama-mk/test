@@ -1,0 +1,10 @@
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\bin\Debug\Calculator2.exe.config
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\bin\Debug\Calculator2.exe
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\bin\Debug\Calculator2.pdb
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\bin\Debug\Calculator2.xml
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.Form1.resources
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.Resources.resources
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.vbproj.GenerateResource.Cache
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.exe
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.xml
+C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculator2\Calculator2\obj\Debug\Calculator2.pdb
