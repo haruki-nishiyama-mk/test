@@ -1,11 +1,26 @@
 ﻿Public Class Form1
 
+    '今回押されたボタンの数字以外の値(+,-,c,=)を保存する変数
+    Private ope As String = Nothing
+    '今回押されたボタンの値(1~0,+,-,c)を保存する変数
+    Private beforeIn As String = "C"
+    '演算結果を保存する変数
+    Private ans As Long = 0
+    '今回入力された数値を保存する変数
+    Private num As Long = 0
+
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LblAnser.Click
 
     End Sub
 
     Private Sub ButtonOne_Click(sender As Object, e As EventArgs) Handles ButtonOne.Click
-        LblAnser.Text = LblAnser.Text & "1"
+        If beforeIn >= "1" And beforeIn <= "3" Then
+            '直前の押されたのが数字ボタンのとき
+            'かつ、8桁未満の数値が入力されているとき
+            If LblAnser.Text.Length < 8 Then
+
+            End If
+        End If
     End Sub
 
     Private Sub ButtonTwo_Click(sender As Object, e As EventArgs) Handles ButtonTwo.Click
@@ -52,6 +67,18 @@
 
     Private Sub ButtonNine_Click(sender As Object, e As EventArgs) Handles ButtonNine.Click
         LblAnser.Text = LblAnser.Text & "9"
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Buttonplus.Click
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles ButtonClear.Click
+
+    End Sub
+
+    Private Sub Button1Equal_Click(sender As Object, e As EventArgs) Handles Button1Equal.Click
 
     End Sub
 End Class

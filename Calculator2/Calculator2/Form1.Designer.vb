@@ -33,6 +33,10 @@ Partial Class Form1
         Me.ButtonEight = New System.Windows.Forms.Button()
         Me.ButtonSeven = New System.Windows.Forms.Button()
         Me.ButtonZero = New System.Windows.Forms.Button()
+        Me.Buttonplus = New System.Windows.Forms.Button()
+        Me.ButtonClear = New System.Windows.Forms.Button()
+        Me.Button1Equal = New System.Windows.Forms.Button()
+        Me.Buttonminus = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblAnser
@@ -137,12 +141,52 @@ Partial Class Form1
         Me.ButtonZero.Text = "0"
         Me.ButtonZero.UseVisualStyleBackColor = True
         '
+        'Buttonplus
+        '
+        Me.Buttonplus.Location = New System.Drawing.Point(13, 70)
+        Me.Buttonplus.Name = "Buttonplus"
+        Me.Buttonplus.Size = New System.Drawing.Size(77, 30)
+        Me.Buttonplus.TabIndex = 11
+        Me.Buttonplus.Text = "+"
+        Me.Buttonplus.UseVisualStyleBackColor = True
+        '
+        'ButtonClear
+        '
+        Me.ButtonClear.Location = New System.Drawing.Point(178, 70)
+        Me.ButtonClear.Name = "ButtonClear"
+        Me.ButtonClear.Size = New System.Drawing.Size(75, 30)
+        Me.ButtonClear.TabIndex = 12
+        Me.ButtonClear.Text = "C"
+        Me.ButtonClear.UseVisualStyleBackColor = True
+        '
+        'Button1Equal
+        '
+        Me.Button1Equal.Location = New System.Drawing.Point(178, 215)
+        Me.Button1Equal.Name = "Button1Equal"
+        Me.Button1Equal.Size = New System.Drawing.Size(75, 30)
+        Me.Button1Equal.TabIndex = 13
+        Me.Button1Equal.Text = "="
+        Me.Button1Equal.UseVisualStyleBackColor = True
+        '
+        'Buttonminus
+        '
+        Me.Buttonminus.Location = New System.Drawing.Point(97, 70)
+        Me.Buttonminus.Name = "Buttonminus"
+        Me.Buttonminus.Size = New System.Drawing.Size(77, 30)
+        Me.Buttonminus.TabIndex = 14
+        Me.Buttonminus.Text = "-"
+        Me.Buttonminus.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.Buttonminus)
+        Me.Controls.Add(Me.Button1Equal)
+        Me.Controls.Add(Me.ButtonClear)
+        Me.Controls.Add(Me.Buttonplus)
         Me.Controls.Add(Me.ButtonZero)
         Me.Controls.Add(Me.ButtonNine)
         Me.Controls.Add(Me.ButtonEight)
@@ -170,5 +214,9 @@ Partial Class Form1
     Friend WithEvents ButtonEight As System.Windows.Forms.Button
     Friend WithEvents ButtonSeven As System.Windows.Forms.Button
     Friend WithEvents ButtonZero As System.Windows.Forms.Button
+    Friend WithEvents Buttonplus As System.Windows.Forms.Button
+    Friend WithEvents ButtonClear As System.Windows.Forms.Button
+    Friend WithEvents Button1Equal As System.Windows.Forms.Button
+    Friend WithEvents Buttonminus As System.Windows.Forms.Button
 
 End Class
