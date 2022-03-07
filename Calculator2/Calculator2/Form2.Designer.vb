@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
@@ -22,7 +22,7 @@ Partial Class Form1
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LblAnser = New System.Windows.Forms.Label()
+        Me.LblAnser2 = New System.Windows.Forms.Label()
         Me.ButtonOne = New System.Windows.Forms.Button()
         Me.ButtonTwo = New System.Windows.Forms.Button()
         Me.ButtonThree = New System.Windows.Forms.Button()
@@ -35,17 +35,17 @@ Partial Class Form1
         Me.ButtonZero = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'LblAnser
+        'LblAnser2
         '
-        Me.LblAnser.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.LblAnser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.LblAnser.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.LblAnser.Location = New System.Drawing.Point(30, 19)
-        Me.LblAnser.Name = "LblAnser"
-        Me.LblAnser.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.LblAnser.Size = New System.Drawing.Size(212, 37)
-        Me.LblAnser.TabIndex = 0
-        Me.LblAnser.Text = "0"
+        Me.LblAnser2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.LblAnser2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.LblAnser2.Font = New System.Drawing.Font("MS UI Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.LblAnser2.Location = New System.Drawing.Point(30, 19)
+        Me.LblAnser2.Name = "LblAnser2"
+        Me.LblAnser2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.LblAnser2.Size = New System.Drawing.Size(212, 37)
+        Me.LblAnser2.TabIndex = 0
+        Me.LblAnser2.Text = "0"
         '
         'ButtonOne
         '
@@ -137,11 +137,10 @@ Partial Class Form1
         Me.ButtonZero.Text = "0"
         Me.ButtonZero.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonZero)
         Me.Controls.Add(Me.ButtonNine)
@@ -153,13 +152,13 @@ Partial Class Form1
         Me.Controls.Add(Me.ButtonThree)
         Me.Controls.Add(Me.ButtonTwo)
         Me.Controls.Add(Me.ButtonOne)
-        Me.Controls.Add(Me.LblAnser)
-        Me.Name = "Form1"
+        Me.Controls.Add(Me.LblAnser2)
+        Me.Name = "Form2"
         Me.Text = "簡単電卓"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents LblAnser As System.Windows.Forms.Label
+    Friend WithEvents LblAnser2 As System.Windows.Forms.Label
     Friend WithEvents ButtonOne As System.Windows.Forms.Button
     Friend WithEvents ButtonTwo As System.Windows.Forms.Button
     Friend WithEvents ButtonThree As System.Windows.Forms.Button
