@@ -49,8 +49,9 @@ namespace サンプルコード1
             var i = 0;
             while(i<scores.Length)
             {
-                if(scores[i]<0||scores[i]>100)
-                {MessageBox.Show(subjects[i]+":0～100の数値を指定してください");
+                if(scores[i]<0 || scores[i]>100)
+                {
+                MessageBox.Show(subjects[i]+":0～100の数値を指定してください");
                 break;
                 }
                 i++;
@@ -58,7 +59,7 @@ namespace サンプルコード1
             //総得点の計算
             foreach(var value in scores)
             {
-                total = value;
+                total += value;
             
             }
 
