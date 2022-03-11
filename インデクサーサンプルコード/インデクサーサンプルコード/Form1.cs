@@ -84,6 +84,8 @@ namespace インデクサーサンプルコード
                         return;
                     }
                 }
+                class_name = "[不明]";
+                TeacherName = "[不明]";
             }
         }
 
