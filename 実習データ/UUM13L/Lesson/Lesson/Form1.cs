@@ -16,5 +16,17 @@ namespace Lesson
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var i = 200; //単価
+            var b = 5; //個数
+            var t = 0;
+
+            t = i * b;
+
+            MessageBox.Show("合計金額:"+t.ToString()+"円");
+
+        }
     }
 }
