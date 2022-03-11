@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3DC3DCA-5B43-4B27-8F31-A9BDB173C04C}</ProjectGuid>
+    <ProjectGuid>{F22958D2-8225-4CF6-93E7-E6E310E7A51B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>サンプルコード1</RootNamespace>
-    <AssemblyName>サンプルコード1</AssemblyName>
+    <RootNamespace>インデクサーサンプルコード</RootNamespace>
+    <AssemblyName>インデクサーサンプルコード</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -74,5 +74,22 @@ namespace サンプルコード1
             }
             MessageBox.Show("合計:"+total.ToString()+"点　平均:"+average.ToString()+"点");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var x = 10;
+            MessageBox.Show("Xの値:"+x.ToString());
+            var y = 20;
+            MessageBox.Show("yの値:"y.ToString());
+
+
+        int z;
+
+        var test1 = new Test();
+            test1.Method1(x,ref y, out z);
+            MessageBox.Show("Xの値:"+x.ToString());
+            MessageBox.Show("Yの値:"+y.ToString());
+            MessageBox.Show("Zの値:"+z.ToString());
+        }
     }
 }
