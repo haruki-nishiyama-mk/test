@@ -28,5 +28,25 @@ namespace Lesson
             MessageBox.Show("合計金額:"+t.ToString()+"円");
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var i = 200; //単価
+            var b = 5; //個数
+            var c = 0.00;  //税込み金額
+        
+        
+            class Tax
+            {
+               var d = 1.08; //税率
+
+               c = i * b * d;
+
+
+            }
+
+
+
+        }
     }
-}
+
