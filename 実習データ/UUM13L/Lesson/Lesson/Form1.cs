@@ -12,6 +12,8 @@ namespace Lesson
 {
     public partial class Form1 : Form
     {
+        double t = 1.08; //税率計算用
+
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace Lesson
 
             t = i * b;
 
-            MessageBox.Show("合計金額:"+t.ToString()+"円");
+            MessageBox.Show("合計金額:" + t.ToString() + "円");
 
         }
 
@@ -34,19 +36,14 @@ namespace Lesson
             var i = 200; //単価
             var b = 5; //個数
             var c = 0.00;  //税込み金額
-        
-        
-            class Tax
-            {
-               var d = 1.08; //税率
 
-               c = i * b * d;
+            c = i * b * t;
 
-
-            }
+            MessageBox.Show("合計金額："+c.ToString()+"円");
 
 
 
         }
     }
+}
 
