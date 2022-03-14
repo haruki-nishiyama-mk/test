@@ -44,6 +44,33 @@ namespace Lesson
 
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var score = int.Parse(textBox1.Text);
+            var result = "";
+
+            if( score >= 80)
+            {
+                result = "合格";
+            }
+            else
+            {
+                result = "不合格";
+            }
+
+            MessageBox.Show("合否結果" + result);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
