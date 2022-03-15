@@ -103,6 +103,31 @@ namespace Lesson
 
 
         public int i { get; set; }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var a = 0; //乳児 0～3
+            var b = 600; //小人 4～12
+            var c = 1200; //大人 13以上
+
+            var age = int.Parse(textBox1.Text);
+            var price = 0;
+
+           if(age >= 0 && age<=3)
+           {
+               price = a;
+           }
+           else if(age >=4 && age <=12)
+           {
+               price = b;
+           }
+           else
+           {
+               price = c;
+           }
+
+           MessageBox.Show("入場料:" + price.ToString()+"円");
+        }
     }
 }
 
