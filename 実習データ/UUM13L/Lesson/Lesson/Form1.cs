@@ -14,6 +14,8 @@ namespace Lesson
     {
         double t = 1.08; //税率計算用
 
+        List<string> itemList = new List<string>(); //2-7　商品名格納用
+
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace Lesson
 
             MessageBox.Show("合計金額："+c.ToString()+"円");
 
-
+            
 
         }
 
@@ -164,6 +166,20 @@ namespace Lesson
           
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+  
+            itemList.Add(textBox1.Text); //商品名の入力追加
+            
+            foreach(var value in itemList)
+                {
+                    MessageBox.Show(value.ToString());
+                }
+
+
+            }
+        }
+
     }
-}
+
 
