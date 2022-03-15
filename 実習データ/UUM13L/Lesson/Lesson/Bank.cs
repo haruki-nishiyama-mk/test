@@ -8,10 +8,10 @@ namespace Lesson
 {
     class Bank
     {
-        public string Name { get; set; } //銀行名
-        public string Address { get; set; } //住所
+        public string Name { get; set; }    // 銀行名
+        public string Address { get; set; }    // 住所
 
-        private string ShopCode; //ショップコード
+        private string ShopCode;    // ショップコード
 
         public string Code
         {
