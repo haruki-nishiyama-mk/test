@@ -128,6 +128,42 @@ namespace Lesson
 
            MessageBox.Show("入場料:" + price.ToString()+"円");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var score = new int[] { 80, 60, 60, 10, 50 }; //科目点数
+            var total = 0; //合計点数格納
+            var succese =0; //合格科目数格納
+
+            foreach(var value in score) //反復変数
+            {
+                if(value>= 0 && value <=100)
+                {
+                 if(value >= 60 )
+                 {
+                     succese++;
+                 }
+
+                }
+                else
+                {
+                    MessageBox.Show("無効な数値です");
+                    return;
+                }
+            }
+
+           if(succese >= 3)
+           {
+               MessageBox.Show("合格");
+           }
+
+           else
+           {
+               MessageBox.Show("不合格");
+           }
+          
+        }
+
     }
 }
 
