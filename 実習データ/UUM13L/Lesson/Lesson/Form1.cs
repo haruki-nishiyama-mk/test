@@ -71,6 +71,38 @@ namespace Lesson
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var points = new int[] { 81, 60, 90, 70, 50 };
+            var total = 0;
+            var average = 0;
+
+            for(var i =0;i<points.Length;i++)
+            {
+           
+                if(points[i]>= 0 && points[i]<=100)
+            {
+
+                     total += points[i];
+            
+               
+            }
+
+                      else
+            {
+                MessageBox.Show("無効な数値です");
+
+                return;
+            }
+       average = (int)total/points.Length;
+
+            MessageBox.Show("合計:"+total.ToString()+"点 平均:"+average.ToString());
+        }}
+
+
+
+        public int i { get; set; }
     }
 }
 
