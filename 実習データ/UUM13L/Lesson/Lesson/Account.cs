@@ -63,6 +63,20 @@ namespace Lesson
             this.Name = name;
             this.Tel = tel;
         }
+      public Account():this("","",0,""){}    // デフォルトコンストラクターの定義
+
+      public Account(string number, string name) : this(number, name, 0, "") { }
+
+      public Account(string number, string name,int balance) : this(number, name, balance, "") { }
+
+      public Account(string number, string name,int balance,string tel)    //引数4つのコンストラクターの定義
+      {
+          this.Number = number;
+          this.Name = name;
+          this.Balance = balance;
+          this.Tel = tel;
+
+      }
     }
 
 

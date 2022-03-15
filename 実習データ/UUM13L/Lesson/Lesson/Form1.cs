@@ -249,6 +249,16 @@ namespace Lesson
 
 
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            // var suzukiAccount = new Account("12345","鈴木花子");
+            // var suzukiAccount = new Account("12345", "鈴木花子",10000);
+            var suzukiAccount = new Account("12345", "鈴木花子", 10000,"0312345678");
+
+            MessageBox.Show(suzukiAccount.ReturnInfo()+"電話番号:"+suzukiAccount.Tel);
+
+        }
         }
 
     }
