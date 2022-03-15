@@ -178,6 +178,39 @@ namespace Lesson
 
 
             }
+
+
+//ここからLesson 4
+
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var suzukiAccount = new Account();    //アカウントのインスタンス生成
+
+            suzukiAccount.Name = "鈴木ハナコ";    //名前
+            suzukiAccount.Tel = "08012345678";    //電話番号
+
+            MessageBox.Show("口座名は" + suzukiAccount.Name + "です");
+            MessageBox.Show("電話番号は" + suzukiAccount.Tel + "です");
+
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var nadeshikoBank = new Bank();
+
+            nadeshikoBank.Name = "なでしこ銀行";
+            nadeshikoBank.Address = "東京都港区湊南";
+
+            nadeshikoBank.Code = "5655";
+
+            MessageBox.Show("この銀行は" + nadeshikoBank.Name + "です");
+            MessageBox.Show("住所は" + nadeshikoBank.Address + "です");
+            MessageBox.Show("店舗コードは" + nadeshikoBank.Code + "です");
+            
+        }
         }
 
     }
