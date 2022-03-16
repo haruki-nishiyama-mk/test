@@ -107,6 +107,18 @@ namespace Lesson
                 return false;
             }
         }
+
+        public string Confirm(string nameToAuth)
+        {
+            if (Name == nameToAuth)
+            {
+                return "ようこそ" + Name + "さん！ご利用のお手続きをお選びください";
+            }
+            else
+            {
+                return "お名前が見つかりません。　内容をお確かめください";
+            }
+        }
     }
 
 

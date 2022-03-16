@@ -47,6 +47,9 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Bank.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CashCard.cs" />
+    <Compile Include="CreditCard.cs" />
     <Compile Include="DebitAccount.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,6 +57,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IAuthenticatable.cs" />
     <Compile Include="LoanAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

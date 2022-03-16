@@ -333,6 +333,64 @@ namespace Lesson
 
             }
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            var accounts = new Account[3];
+
+            accounts[0] = new Account("77777", "佐藤イチロー", 30000);
+            accounts[1] = new LoanAccount("12345", "鈴木ハナコ", 20000,50000);
+            accounts[2] = new Account("99999", "大西ジロー", 5000);
+
+            foreach(var value in accounts)
+            {
+                MessageBox.Show(value.ReturnInfo());
+
+            }
+
+            var la = (LoanAccount)accounts[1];
+
+            la.Loan(5000);
+
+            MessageBox.Show(la.ReturnInfo());
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            var suzukiAccount = new Account("12345", "鈴木ハナコ", 20000);
+
+            var name = suzukiAccount.Confirm(textBox1.Text);
+
+            MessageBox.Show(name);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            var karinBank = new Bank("かりん銀行", "001");
+
+            var name = karinBank.Confirm(textBox1.Text);
+
+            MessageBox.Show(name);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            var cards = new Card[3];
+
+            cards[0] = new CreditCard("12345", "鈴木ハナコ", "ゴールドカード");
+            cards[1] = new CashCard("98765", "佐藤イチロー", "1234");
+            cards[2] = new CashCard("98765", "佐藤サトコ", "5555");
+
+            var ca = (CashCard)cards[2];
+            ca.Substitute = true;
+
+            foreach(var value in cards)
+            {
+                MessageBox.Show(value.ReturnCardInfo());
+
+            }
+
+        }
         }
 
     }

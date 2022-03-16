@@ -70,6 +70,18 @@ namespace Lesson
         {
             return Account.Deposit(maney);    // Accountプロパティが保持するAccountオブジェクトのDepositメソッドを実行
         }
+
+        public string Confirm(string nameToAuth)
+        {
+            if (Name == nameToAuth)
+            {
+                return "銀行名を確認しました";
+            }
+            else
+            {
+                return "銀行名が見つかりません。内容をお確かめ下さい";
+            }
+        }
     }
 
 }
