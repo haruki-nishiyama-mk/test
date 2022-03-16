@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="AccountException.cs" />
     <Compile Include="Bank.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="CashCard.cs" />

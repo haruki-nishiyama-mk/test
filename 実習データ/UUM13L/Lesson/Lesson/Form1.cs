@@ -219,14 +219,23 @@ namespace Lesson
 
             MessageBox.Show(suzukiAccount.ReturnInfo());    // 口座番号を表示
 
-            var reslut = suzukiAccount.Deposit(int.Parse(textBox1.Text));    // 預金結果
-            if(reslut)
+            try    // 例外処理
             {
-                MessageBox.Show("預金成功");
+
+                var reslut = suzukiAccount.Deposit(int.Parse(textBox1.Text));    // 預金結果
+                if (reslut)
+                {
+                    MessageBox.Show("預金成功");
+                }
+                else
+                {
+                    MessageBox.Show("預金失敗");
+                }
             }
-            else
+            catch(FormatException ex)
             {
-                MessageBox.Show("預金失敗");
+                MessageBox.Show("数値を入力してください");
+                return;
             }
             MessageBox.Show(suzukiAccount.ReturnInfo());
         }
@@ -389,10 +398,50 @@ namespace Lesson
                 MessageBox.Show(value.ReturnCardInfo());
 
             }
+            
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            var suzukiAccount = new Account("12345", "鈴木ハナコ", 30000);
+
+            MessageBox.Show(suzukiAccount.ReturnInfo());
+
+            var money = int.Parse(textBox1.Text);    // 預金額
+
+            try
+            {
+                if(money <= 200000)
+                {
+                    var result = suzukiAccount.Deposit(money);    // 預金結果
+                    if(result)
+                    {
+                        MessageBox.Show("預金成功");
+                    }
+                    else
+                    {
+                        MessageBox.Show("預金失敗");
+                    }}
+                    else
+                    {
+                        throw new AccountException("1回あたりの預金限度額を超過しています");
+                    }
+                
+                }
+                catch(AccountException ae)
+            {MessageBox.Show(ae.Message);
+                    return;    // finallyブロック移行処理がないため省略
+
+                }
+            
+                finally
+                {
+                    MessageBox.Show(suzukiAccount.ReturnInfo());
+                }
+            }
+            }
 
         }
-        }
 
-    }
 
 
