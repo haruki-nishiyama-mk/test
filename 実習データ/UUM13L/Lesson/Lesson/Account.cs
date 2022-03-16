@@ -34,7 +34,7 @@ namespace Lesson
 
         }
     
-        public string ReturnInfo()    // 口座情報を返却するメソッド
+        public virtual string ReturnInfo()    // 口座情報を返却するメソッド
         {
             return "口座番号:" + Number + "口座名義:" + Name + "残高:" + Balance.ToString();
         }
@@ -94,6 +94,18 @@ namespace Lesson
         public static string ReturnRate()
         {
             return "預金金利:" + Rate.ToString();
+        }
+        public bool WithDraw(int money)    // 預金を減算するメソッド
+        {
+            if(money <= Balance)
+            {
+                Balance -= money;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 

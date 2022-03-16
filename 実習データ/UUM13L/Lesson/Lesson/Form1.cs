@@ -292,6 +292,47 @@ namespace Lesson
 
 
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            var suzukiLoanAccount = new LoanAccount("12345", "鈴木ハナコ", 20000, 30000);
+            MessageBox.Show(suzukiLoanAccount.ReturnInfo());
+
+            var result = suzukiLoanAccount.Loan(8000);
+            if(result)
+            {
+                MessageBox.Show("借入完了");
+            }
+            else
+            {
+                MessageBox.Show("借入失敗");
+            }
+
+            MessageBox.Show(suzukiLoanAccount.ReturnInfo());
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            var suzukiDebitAccount = new DebitAccount("12345", "鈴木ハナコ", 20000);
+
+            MessageBox.Show(suzukiDebitAccount.ReturnInfo());
+
+            var result = suzukiDebitAccount.Debit("5555", 3000);
+            {
+                if(result)
+                {
+                    MessageBox.Show("振込完了");
+                }
+                else
+                {
+                    MessageBox.Show("振込失敗");
+                }
+
+                MessageBox.Show(suzukiDebitAccount.ReturnInfo());
+
+            }
+        }
         }
 
     }
