@@ -77,6 +77,24 @@ namespace Lesson
           this.Tel = tel;
 
       }
+      private static double rateVlaue = 0.02;    // 預金金利
+
+        public static double Rate
+      {
+            get
+          {
+              return rateVlaue;
+          }
+            set
+          {
+              rateVlaue = value;
+          }
+      }
+
+        public static string ReturnRate()
+        {
+            return "預金金利:" + Rate.ToString();
+        }
     }
 
 

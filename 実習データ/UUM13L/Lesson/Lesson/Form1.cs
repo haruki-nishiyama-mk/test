@@ -259,6 +259,39 @@ namespace Lesson
             MessageBox.Show(suzukiAccount.ReturnInfo()+"電話番号:"+suzukiAccount.Tel);
 
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var nadeshikoBank = new Bank("なでしこ銀行", "001", "東京都港区港南");
+
+            MessageBox.Show(nadeshikoBank.ReturnInfo());
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var nadeshikoBank = new Bank("なでしこ銀行", "001", "東京都港区港南");
+
+            nadeshikoBank.CreateAccount("54321", "鈴木ハナコ", 10000);
+
+            MessageBox.Show(nadeshikoBank.ReturnAccountInfo());
+
+            var result = nadeshikoBank.Deposit(1000);    // 預金結果
+            if(result)
+            {
+                MessageBox.Show("預金完了");
+            }
+            else
+            {
+                MessageBox.Show("預金失敗");
+            }
+
+            MessageBox.Show(nadeshikoBank.ReturnAccountInfo());
+
+            MessageBox.Show(Account.ReturnRate());    // 預金利率の表示
+
+
+        }
         }
 
     }
