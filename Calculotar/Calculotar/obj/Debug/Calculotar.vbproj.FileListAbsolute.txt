@@ -8,3 +8,7 @@ C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculotar\Calculotar\obj\
 C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculotar\Calculotar\obj\Debug\Calculotar.xml
 C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculotar\Calculotar\obj\Debug\Calculotar.pdb
 C:\Users\h-nishiyama\Desktop\sorcetree追加テスト\Calculotar\Calculotar\obj\Debug\Calculotar.Form1.resources
+C:\Users\h-nishiyama\Documents\test\Calculotar\Calculotar\bin\Debug\Calculotar.exe.config
+C:\Users\h-nishiyama\Documents\test\Calculotar\Calculotar\obj\Debug\Calculotar.exe
+C:\Users\h-nishiyama\Documents\test\Calculotar\Calculotar\obj\Debug\Calculotar.xml
+C:\Users\h-nishiyama\Documents\test\Calculotar\Calculotar\obj\Debug\Calculotar.pdb
